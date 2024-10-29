@@ -164,7 +164,7 @@
         function style_INFRASTRUKTUR_1_0() {
             return {
                 pane: 'pane_INFRASTRUKTUR_1',
-                radius: 6.000000000000001,
+                radius: 6.0,
                 opacity: 1,
                 color: 'rgba(117,58,128,1.0)',
                 dashArray: '',
@@ -173,7 +173,7 @@
                 weight: 2.0,
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(40,242,0,1.0)',
+                fillColor: 'rgba(85,242,0,1.0)',
                 interactive: true,
             }
         }
@@ -366,7 +366,7 @@
                 feature: layer.feature,
                 variables: {}
             };
-            layer.bindTooltip((layer.feature.properties['LOT'] !== null?String('<div style="color: #ffffff; font-size: 12pt; font-family: \'Rockwell Extra Bold\', sans-serif;">' + layer.feature.properties['LOT']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_OWNERLOTTNH_2'});
+            layer.bindTooltip((layer.feature.properties['LOT'] !== null?String('<div style="color: #ffffff; font-size: 12pt; font-weight: bold; font-family: \'Rockwell Extra Bold\', sans-serif;">' + layer.feature.properties['LOT']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_OWNERLOTTNH_2'});
             labels.push(layer);
             totalMarkers += 1;
               layer.added = true;
